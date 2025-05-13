@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Calculator</h1>
+        <form id="gradeForm">
+            <label for="classScores">Enter class scores (comma-separated, e.g., 92,88,12):</label>
+            <input type="text" id="classScores" placeholder="e.g., 92,88,12" required>
+            
+            <label for="studentScore">Enter your score (0-100):</label>
+            <input type="number" id="studentScore" min="0" max="100" placeholder="e.g., 85" required>
+            
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="result" class="result"></div>
+        <div id="error" class="error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
